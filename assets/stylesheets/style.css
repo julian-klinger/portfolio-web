@@ -1,0 +1,66 @@
+html, body {
+  overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+  hyphens: manual;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nav-left {
+  height: 90vh;
+}
+
+.content {
+  height: 90vh;
+}
+
+.nav-left li {
+  margin-top: 20px;
+}
+
+a:visited {
+  color: black;
+}
+
+.active {
+  text-decoration: underline dotted grey;
+}
+
+.backdrop {
+  background-color: rgba(240, 240, 240, .95);
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 2%;
+  color: black;
+  overflow: auto;
+}
+
+/*.row:hover {
+  box-shadow: 3px 3px 5px lightgrey;
+  transition: .7s;
+}*/
+
+.bordered {
+  border: 1px solid lightgrey;
+}
+
+.zoom:hover {
+    transform: scale(1.02);
+}
+
+.jumbotron {
+  background-color: blue;
+  border-radius: 0;
+  min-height: 3em;
+  margin-bottom: 0;
+}

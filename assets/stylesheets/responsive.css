@@ -1,0 +1,43 @@
+@media (max-width: 992px){
+	.landing-page {
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 768px){
+		.landing-page {
+		font-size: 0.6em;
+	}
+}
+
+@media (max-width: 567px){
+	main {
+		margin-top: 12px;
+		border-top: 0;
+	}
+
+	.galerie {
+		margin-top: 30px;
+	}
+
+	.navbar {
+		height: 60px;
+	}
+
+	.navbar-dark .navbar-toggler {
+		margin-left: 10px;
+	}
+
+	.landing-page {
+		font-size: 0.4em;
+		margin-top: 20%;
+	}
+
+	nav ul {
+		background-color: rgba(65, 61, 47, 0.75);
+	}
+
+	h2, h3, h4, h5 {
+		font-size: 1.3em;
+	}
+}

@@ -1,0 +1,16 @@
+body.debug * { 
+  border: 1px solid red; 
+}
+
+.debug-size {
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.debug-size div {
+  background: black;
+  padding: 20px;
+  color: white;
+}

@@ -1,12 +1,33 @@
 @media (max-width: 992px){
-	.landing-page {
-		font-size: 0.8em;
+
+	.footer-logo {
+	  width: 300px;
+	  position: absolute;
+	  bottom: -100px;
+	  right: -80px;
 	}
 }
 
 @media (max-width: 768px){
-		.landing-page {
-		font-size: 0.6em;
+
+	.icon-img {
+	  width: 15%;
+	}
+
+	.footer-logo {
+	  width: 250px;
+	  position: relative;
+	  bottom: -100px;
+	  right: -30px;
+	  margin-top: -30px;
+	}
+
+	.speechbubble {
+	  position: absolute;
+	  right: 30%;
+	  bottom: 25%;
+	  z-index: 1;
+	  width: 200px;
 	}
 }
 
@@ -16,28 +37,55 @@
 		border-top: 0;
 	}
 
-	.galerie {
-		margin-top: 30px;
+	.logo {
+		padding: 10px 50px;
 	}
 
-	.navbar {
-		height: 60px;
+
+	.fa-bars {
+	  font-size: 2em;
+	  color: rgba(255, 165, 0, 1);
 	}
 
-	.navbar-dark .navbar-toggler {
-		margin-left: 10px;
+	.icon-img {
+	  width: 25%;
 	}
 
-	.landing-page {
-		font-size: 0.4em;
-		margin-top: 20%;
+	h1 {
+		font-size: 1.5em;
 	}
 
-	nav ul {
-		background-color: rgba(65, 61, 47, 0.75);
+	.angebot p {
+	  font-size: 1em;
 	}
 
-	h2, h3, h4, h5 {
-		font-size: 1.3em;
+	.kontakt p {
+	  font-size: 1em;
 	}
+
+	.navbar-dark .navbar-nav .nav-link {
+	  font-size: 1em;
+	}
+
+	.navbar-dark {
+		background-color: rgba(255, 255, 255, .95);
+	}
+
+	.modalDialog > div {
+	  width: 90vw;
+	  height: 90vh;
+	  position: relative;
+	  margin: 5% auto;
+	  padding: 15px;
+	  background-color: white;
+	}
+
+	.close-x {
+		font-size: 1.7em;
+	}
+
+	.portfolio h1 {
+		margin-bottom: 10px;
+	}
+
 }

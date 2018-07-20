@@ -6,16 +6,42 @@ html, body {
 }
 
 .navbar-dark {
-  background-color: #f09f09;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   font-weight: 800;
-  box-shadow: .1px .1px 1px white;
+  color: rgba(255, 165, 0, 1) !important;
+}
+
+.fa-bars {
+  font-size: 3em;
+  color: rgba(255, 165, 0, 1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 165, 0, 1) !important;
+  font-size: 1.4em;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 165, 0, .7) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:visited {
+  color: rgba(255, 165, 0, .7) !important;
 }
 
 .start {
   height: 100vh;
-  background-color: #FFF0D3;
+}
+
+.logo {
+  padding: 10px 100px;
+}
+
+.inhaber {
+  font-size: 1em;
+  line-height: .5em;
+
 }
 
 .arrow {
@@ -25,88 +51,111 @@ html, body {
   color: #f09f09;
 }
 
+.arrow1 {
+  font-size: 3em;
+  color: #f09f09;
+}
+
+a:hover {
+  color: rgba(255, 165, 0, .7);
+  text-decoration: none;
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800;   
+  font-weight: 800;
+  color: rgba(255, 165, 0, 1);
+  text-align: center;
+}
+
+.impressum h2 {
+  color: rgba(255, 165, 0, 1);
+
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.4em;
+  color: rgba(255, 255, 255, 1);
 }
 
 .angebot p {
   font-family: 'Esteban', sans-serif;
   font-weight: 400;
   font-size: 1.3em;
-  color: white;
+  color: rgba(255, 165, 0, 1);
 }
 
 .angebot {
-  background-color: #f09f09;
   color: white;
   height: auto;
+  background-color: #FFF0D3;
 }
 
 .icon-img {
-  width: 8%;
+  width: 13%;
 }
 
 .icon {
   font-size: 4em;
+  color: rgba(255, 165, 0, 1);
 }
 
 .portfolio h1 {
+  margin-bottom: 45px;
+}
+
+.portfolio h2 {
   font-size: 1.2em;
 }
 
 .portfolio {
   color: #f09f09;
-  background-color: #FFF0D3;
 }
 
-.portfolio-img {
-  border: 1px 1px grey;
-  box-shadow: 2px 2px 5px rgb(190, 190, 190);
-  display: block;
-  width: 100%;
-  height: auto;
+.card {
+  border: none;
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(255, 165, 0, 1);
+  margin-bottom: 1.5em;
+  box-shadow: .5px .5px 4px rgba(180, 180, 180, 1);
 }
 
-.wrap {
-  position: relative;
-  width: 100%;
+.card-title {
+  margin-bottom: .2em;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: .9;
-  transition: .5s ease;
-  background-color: #f09f09;
-}
-
-.wrap:hover .overlay {
-  opacity: 0;
-}
-
-.text {
-  color: white;
-  font-size: .85em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
+.card h2 {
+  color: rgba(255, 165, 0, 1);
   font-size: 1.2em;
-  font-weight: 800;
+}
+
+.card p {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+.card-img-top {
+  border: none;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.btn-primary {
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  color: rgba(255, 165, 0, 1);
 }
 
 .kontakt {
-  background-color: #f09f09;
   color: #f09f09;
   height: 100vh;
+  background-color: #FFF0D3;
 }
 
 .kontakt p {
@@ -115,14 +164,6 @@ h1 {
   font-size: 1.3em;
   color: #f09f09;
 }
-
-/*
-.rgba-primary-0 { color: rgba(255,165,  0,1); } 
-.rgba-primary-1 { color: rgba(255,200, 99,1); }
-.rgba-primary-2 { color: rgba(255,185, 57,1); }
-.rgba-primary-3 { color: rgba(197,128,  0,1); }
-.rgba-primary-4 { color: rgba(155,100,  0,1); } 
-*/
 
 
 .debug-size {
@@ -136,5 +177,196 @@ h1 {
   background: black;
   padding: 20px;
   color: white;
+}
+
+.fa-angle-left, .fa-angle-right {
+  color: #f09f09;
+  font-size: 3em;
+}
+
+.drawer {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  background-color: rgba(255, 165, 0, 1);
+  color: white;
+  width: 50px;
+  height: 35px;
+  overflow: hidden;
+}
+
+.drawer:hover {
+  width: 200px;
+  transition: width .8s;
+}
+
+.drawer-visit {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  height: 50px;
+  background-color: rgba(255, 108, 0, 1);
+  color: white;
+  width: 50px;
+  height: 35px;
+  overflow: hidden;
+}
+
+.drawer-visit:hover {
+  width: 250px;
+  transition: width .8s;
+}
+
+.case:after{
+    content:'i';
+    font-size: 1.5em;
+}
+.case:hover:after{
+    content:'Mehr Infos';
+    font-size: 1.5em;
+    transition: content 1s;
+}
+
+.visit:after{
+    content:'w';
+    font-size: 1.5em;
+}
+.visit:hover:after{
+    content:'Website besuchen';
+    font-size: 1.5em;
+    transition: content 1s;
+}
+
+.drawer-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.visit-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(255, 200, 99, .7);
+  color: rgba(67, 43, 0, 1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.footer-logo {
+  width: 500px;
+  position: absolute;
+  bottom: -190px;
+  right: -80px;
+}
+
+footer a {
+  color: rgba(67, 43, 0, 1);
+}
+
+a {
+  color: rgba(255, 165, 0, 1);
+}
+
+footer h2 {
+  color: rgba(255, 165, 0, 1);
+}
+
+footer a:hover {
+  color: rgba(255, 165, 0, 1);
+}
+
+a:hover {
+  color: rgba(67, 43, 0, 1);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer-box {
+  background-color: rgba(255, 227, 174, 1);
+  padding: 50px;
+}
+
+.speechbubble {
+  position: absolute;
+  right: 40%;
+  bottom: 30%;
+  z-index: 1;
+  width: 250px;
+}
+
+
+/*
+.rgba-primary-0 { color: rgba(255, 165, 0, 1); } 
+.rgba-primary-1 { color: rgba(255, 200, 99, 1); }
+.rgba-primary-2 { color: rgba(255, 185, 57, 1); }
+.rgba-primary-3 { color: rgba(197, 128, 0, 1); }
+.rgba-primary-4 { color: rgba(155, 100, 0, 1); } 
+*/
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 99999;
+  opacity:0;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+  margin: 10% auto;
+  padding: 30px;
+  background-color: white;
+}
+
+.close-x {
+  color: rgba(255, 165, 0, 1);
+  line-height: 25px;
+  position: absolute;
+  right: 0px;
+  text-align: center;
+  top: 0px;
+}
+
+.fa-times{
+  font-size: 2.5em;
+  padding: 10px 15px 0 0 ;
+}
+
+.modal-img {
+  box-shadow: 1px 1px 3px rgba(170, 170, 170, 1);
+  margin-bottom: 25px;
+}
+
+.btn-info {
+  background-color: rgba(255, 165, 0, .8);
+  color: white;
+  border: none;
+  position: absolute !important;
+  bottom: 10px;
+  width: 80vw;
+}
+
+.btn-info:hover {
+  background-color: rgba(255, 165, 0, 1);
 }
 

@@ -32,6 +32,12 @@ html, body {
 
 .start {
   height: 100vh;
+  background: url(../images/bear1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 75px;
 }
 
 .logo {
@@ -46,7 +52,7 @@ html, body {
 
 .arrow {
   font-size: 3em;
-  margin-top: -140px;
+  margin-top: -100px;
   margin-bottom: 130px;
   color: #f09f09;
 }

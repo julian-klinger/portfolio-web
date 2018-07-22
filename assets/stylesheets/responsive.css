@@ -29,6 +29,7 @@
 	  z-index: 1;
 	  width: 200px;
 	}
+
 }
 
 @media (max-width: 567px){
@@ -67,8 +68,8 @@
 	  font-size: 1em;
 	}
 
-	.navbar-dark {
-		background-color: rgba(255, 255, 255, .95);
+	.navbar-dark {/*
+		background-color: rgba(255, 255, 255, .95);*/
 	}
 
 	.modalDialog > div {

@@ -132,6 +132,7 @@ h2 {
   color: rgba(255, 165, 0, 1);
   margin-bottom: 1.5em;
   box-shadow: .5px .5px 4px rgba(180, 180, 180, 1);
+  display: block;
 }
 
 .card-title {

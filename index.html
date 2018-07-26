@@ -316,25 +316,45 @@
     <div class="kontakt-img">
       <section id="kontakt" class="kontakt d-flex align-items-center">
         <div class="mx-auto">
-          <div class="p-3 backdrop">
+          <div class="backdrop p-4">
 
             <div class="container">
-              <div class="row d-flex justify-content-center">
+              <div class="row">
 
                 <div class="col-12">
                   <h1 class="text-center">Interesse geweckt?</h1>
                 </div>
 
-                <div id="btn-ja" class="col-12 col-md-3 p-4 m-2 kontakt-box">
-                  ja?
-                </div>
+                  <div class="p-1 p-sm-2 col-12 col-sm-4 ">
+                    <div class="panel-button kontakt-box btn btn-block" data-panelid="panel1">
+                      ja?
+                    </div>
+                  </div>
 
-                <div id="btn-nein" class="col-12 col-md-3 p-4 m-2 kontakt-box">
-                  nein?
-                </div>
+                  <div class="p-1 p-sm-2 col-12 col-sm-4">
+                    <div class="panel-button kontakt-box btn btn-block" data-panelid="panel2">
+                      nein?
+                    </div>
+                  </div>
 
-                <div id="btn-vie" class="col-12 col-md-3 p-4 m-2 kontakt-box">
-                  vielleicht?
+                  <div class="p-1 p-sm-2 col-12 col-sm-4">
+                    <div class="panel-button kontakt-box btn btn-block" data-panelid="panel3">
+                      vielleicht?
+                    </div>
+                  </div>
+
+                <div class="call-to-action m-1 mx-sm-2">
+                  <div id="panel1" class="initially-hidden">
+                    <p class="p-1 p-sm-2 m-1">Super! Lassen Sie uns ein kostenloses Erstgespräch vereinbaren. Ich freue mich auf Ihre Nachricht unter kontakt@bärenweb.de oder 05553 155 155 7.</p>
+                  </div>
+
+                  <div id="panel2" class="initially-hidden">
+                    <p class="p-1 p-sm-2 m-1">Alles gut. Falls Sie doch 1 Minute Zeit haben, würde ich mich riesig über eine kurze Feedback-Mail an kontakt@bärenweb.de freuen.</p>
+                  </div>
+
+                  <div id="panel3" class="initially-hidden">
+                    <p class="p-1 p-sm-2 m-1">Geben Sie mir eine Chance, Sie zu überzeugen! Schreiben sie mir an kontakt@bärenweb.de oder rufen Sie mich direkt 01553 155 156 7 an! Ich rufe Sie auch gerne zurück.</p>
+                  </div>
                 </div>
 
               </div>              
@@ -395,41 +415,15 @@
       });
 
       $(function() {
-        $('#btn-ja').click(function () {
-          $(this).html("Super! Ich freue mich auf Ihre Nachricht unter kontakt@bärenweb.de oder 05553 155 155 7!");
-          $(this).removeClass("col-md-3");
-          $(this).addClass("mx-2");
-          $("#btn-nein").addClass("d-none");
-          $("#btn-vie").addClass("d-none");
+        $('.panel-button').click(function () {
+          var panelID = $(this).attr('data-panelid');
+          $('#' + panelID).show(1000);
+          $('#' + panelID).siblings().hide();
+          $(this).addClass('btn-active');
+          $(this).parents().siblings().children().removeClass('btn-active');
         });
+      })
 
-        $('#btn-ja').click(function() {
-          $(this).load(document.URL +  ' #btn-ja');
-        })
-      });
-
-      $(function() {
-        $('#btn-nein').click(function () {
-          $(this).html("Alles gut. Falls Sie doch 1 Minute Zeit haben, würde ich mich riesig über eine kurze Feedback-Mail an kontakt@bärenweb.de freuen.");
-          $(this).removeClass("col-md-3");
-          $("#btn-ja").addClass("d-none");
-          $("#btn-vie").addClass("d-none");
-
-
-        });
-      });
-
-      $(function() {
-        $('#btn-vie').click(function () {
-          $(this).html("Geben Sie mir eine Chance, Sie zu überzeugen! Schreiben sie mir an kontakt@bärenweb.de oder rufen Sie mich direkt 01553 155 156 7 an! Ich rufe Sie auch gerne zurück.");
-          $(this).removeClass("col-md-3");
-          $("#btn-ja").addClass("d-none");
-          $("#btn-nein").addClass("d-none");
-
-
-
-        });
-      });
 
     </script>
 

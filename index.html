@@ -313,46 +313,71 @@
 
     </section>
 
-    <section id="kontakt" class="kontakt d-flex align-items-center">
-      <div class="mx-auto col-11 col-md-6 bg-white">
-        <div class="p-4">
-          <h1 class="text-center">Interesse geweckt?</h1>
-          <p class="text-center">Gerne führe ich mit Ihnen ein kostenfreies Vorgespräch. Auf dieser Basis erstelle Ihnen ein unverbindliches Angebot. Schreiben Sie mir einfach eine Mail an <a href="mailto:hallo@bärenweb.de">hallo@bärenweb.de</a> und ich melde mich zeitnah zurück!</p>
-        </div>
-      </div>
-    </section>
+    <div class="kontakt-img">
+      <section id="kontakt" class="kontakt d-flex align-items-center">
+        <div class="mx-auto">
+          <div class="p-3 backdrop">
 
-    <footer>
-      <div class="container py-5">
-        <div class="row d-flex footer-box p-3">
-          <div class="col-12 col-md-4 order-md-1">
-            <h2>Links</h2>
-            <ul>
-              <li><a href="#start" class="smoothScroll">Nach oben</a></li>
-              <li><a href="#portfolio" class="smoothScroll">Zu den Projekten</a></li>
-              <li><a href="#angebot" class="smoothScroll">Zum Angebot</a></li>
-              <li><a href="impressum.html">Impressum</a></li>
-              <li><a href="datenschutz.html">Datenschutz</a></li>
-            </ul>  
-          </div>
-          <div class="col-12 col-md-4 order-md-2">
-            <h2>Meine Tools</h2>
-            <ul>
-              <li>html, CSS</li>
-              <li>Figma</li>
-              <li>javascript</li>
-              <li>Ruby on Rails</li>
-              <li>Github, Sublime Text</li> 
-            </ul>  
-          </div>
-          <div class="col-12 col-md-4 order-md-3">
-            <img class="footer-logo" src="assets/images/logo_bear.png" onmouseover="document.getElementById('div1').style.display = 'block';" onmouseleave="document.getElementById('div1').style.display = 'none';">
+            <div class="container">
+              <div class="row d-flex justify-content-center">
+
+                <div class="col-12">
+                  <h1 class="text-center">Interesse geweckt?</h1>
+                </div>
+
+                <div id="btn-ja" class="col-12 col-md-3 p-4 m-2 kontakt-box">
+                  ja?
+                </div>
+
+                <div id="btn-nein" class="col-12 col-md-3 p-4 m-2 kontakt-box">
+                  nein?
+                </div>
+
+                <div id="btn-vie" class="col-12 col-md-3 p-4 m-2 kontakt-box">
+                  vielleicht?
+                </div>
+
+              </div>              
+            </div>
+
+
 
           </div>
         </div>
-      </div>
-    </footer>
-    <img id="div1" class="speechbubble" style="display: none;" src="assets/images/speechbubble.png">
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="row d-flex footer-box p-3">
+            <div class="col-12 col-md-4 order-md-1">
+              <h2>Links</h2>
+              <ul>
+                <li><a href="#start" class="smoothScroll">Nach oben</a></li>
+                <li><a href="#portfolio" class="smoothScroll">Zu den Projekten</a></li>
+                <li><a href="#angebot" class="smoothScroll">Zum Angebot</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+              </ul>  
+            </div>
+            <div class="col-12 col-md-4 order-md-2">
+              <h2>Meine Tools</h2>
+              <ul>
+                <li>html, CSS</li>
+                <li>Figma</li>
+                <li>javascript</li>
+                <li>Ruby on Rails</li>
+                <li>Github, Sublime Text</li> 
+              </ul>  
+            </div>
+            <div class="col-12 col-md-4 order-md-3">
+              <!-- <img class="footer-logo" src="assets/images/logo_bear.png" onmouseover="document.getElementById('div1').style.display = 'block';" onmouseleave="document.getElementById('div1').style.display = 'none';"> -->
+
+            </div>
+          </div>
+        </div>
+      </footer>
+<!--       <img id="div1" class="speechbubble" style="display: none;" src="assets/images/speechbubble.png">
+ -->    </div>
 
 
     <div class="debug-size">
@@ -366,6 +391,43 @@
       $(function() {
         $(document).click(function () {
           $('.navbar-collapse').collapse('hide');
+        });
+      });
+
+      $(function() {
+        $('#btn-ja').click(function () {
+          $(this).html("Super! Ich freue mich auf Ihre Nachricht unter kontakt@bärenweb.de oder 05553 155 155 7!");
+          $(this).removeClass("col-md-3");
+          $(this).addClass("mx-2");
+          $("#btn-nein").addClass("d-none");
+          $("#btn-vie").addClass("d-none");
+        });
+
+        $('#btn-ja').click(function() {
+          $(this).load(document.URL +  ' #btn-ja');
+        })
+      });
+
+      $(function() {
+        $('#btn-nein').click(function () {
+          $(this).html("Alles gut. Falls Sie doch 1 Minute Zeit haben, würde ich mich riesig über eine kurze Feedback-Mail an kontakt@bärenweb.de freuen.");
+          $(this).removeClass("col-md-3");
+          $("#btn-ja").addClass("d-none");
+          $("#btn-vie").addClass("d-none");
+
+
+        });
+      });
+
+      $(function() {
+        $('#btn-vie').click(function () {
+          $(this).html("Geben Sie mir eine Chance, Sie zu überzeugen! Schreiben sie mir an kontakt@bärenweb.de oder rufen Sie mich direkt 01553 155 156 7 an! Ich rufe Sie auch gerne zurück.");
+          $(this).removeClass("col-md-3");
+          $("#btn-ja").addClass("d-none");
+          $("#btn-nein").addClass("d-none");
+
+
+
         });
       });
 

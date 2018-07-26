@@ -72,6 +72,7 @@ h1 {
   font-weight: 800;
   color: rgba(255, 165, 0, 1);
   text-align: center;
+  text-shadow: 1px 1px 1px white;
 }
 
 .impressum h2 {
@@ -118,6 +119,10 @@ h2 {
 
 .portfolio {
   color: #f09f09;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .card {
@@ -161,7 +166,6 @@ h2 {
 .kontakt {
   color: #f09f09;
   height: 100vh;
-  background-color: #FFF0D3;
 }
 
 .kontakt p {
@@ -256,7 +260,8 @@ h2 {
 }
 
 footer {
-  background-color: rgba(255, 200, 99, .7);
+  background-color: rgba(255, 240, 211, .8);
+  padding: 20px;
   color: rgba(67, 43, 0, 1);
   text-align: center;
   overflow: hidden;
@@ -295,11 +300,6 @@ ul {
   margin-bottom: 0;
 }
 
-.footer-box {
-  background-color: rgba(255, 227, 174, 1);
-  padding: 50px;
-}
-
 .speechbubble {
   position: absolute;
   right: 40%;
@@ -308,14 +308,6 @@ ul {
   width: 250px;
 }
 
-
-/*
-.rgba-primary-0 { color: rgba(255, 165, 0, 1); } 
-.rgba-primary-1 { color: rgba(255, 200, 99, 1); }
-.rgba-primary-2 { color: rgba(255, 185, 57, 1); }
-.rgba-primary-3 { color: rgba(197, 128, 0, 1); }
-.rgba-primary-4 { color: rgba(155, 100, 0, 1); } 
-*/
 
 .modalDialog {
   position: fixed;
@@ -376,3 +368,35 @@ ul {
   background-color: rgba(255, 165, 0, 1);
 }
 
+.kontakt-img {
+  background: url(../images/bear2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.kontakt-box {
+  text-align: center;
+  font-size: 1.6em;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  background-color: rgba(255, 165, 0, 1) ;
+  color: white;
+  cursor: pointer;
+}
+
+.backdrop {
+  background-color: rgba(255, 240, 211, .8) ;
+}
+
+
+
+
+/*
+.rgba-primary-0 { color: rgba(255, 165, 0, 1); } 
+.rgba-primary-1 { color: rgba(255, 200, 99, 1); }
+.rgba-primary-2 { color: rgba(255, 185, 57, 1); }
+.rgba-primary-3 { color: rgba(197, 128, 0, 1); }
+.rgba-primary-4 { color: rgba(155, 100, 0, 1); } 
+*/

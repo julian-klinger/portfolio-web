@@ -1,33 +1,11 @@
 @media (max-width: 992px){
 
-	.footer-logo {
-	  width: 300px;
-	  position: absolute;
-	  bottom: -100px;
-	  right: -80px;
-	}
 }
 
 @media (max-width: 768px){
 
 	.icon-img {
 	  width: 15%;
-	}
-
-	.footer-logo {
-	  width: 250px;
-	  position: relative;
-	  bottom: -100px;
-	  right: -30px;
-	  margin-top: -30px;
-	}
-
-	.speechbubble {
-	  position: absolute;
-	  right: 30%;
-	  bottom: 25%;
-	  z-index: 1;
-	  width: 200px;
 	}
 
 }
@@ -38,8 +16,32 @@
 		border-top: 0;
 	}
 
+.fa-bars {
+	text-shadow: 0 0 40px white;
+	box-shadow: 0 0 15px rgba(255, 240, 211, 1);
+	font-size: 2em !important;
+	background-color: rgba(255, 240, 211, .9);
+	padding: 10px 20px;
+	margin-bottom: 0px;
+}
+.navbar-toggler {
+  padding: 0px !important;
+}
+
+.navbar-collapse {
+	background-color: rgba(255, 240, 211, .9);
+	padding-left: 13px !important;
+	margin-top: 0px;
+	box-shadow: 0 0 15px rgba(255, 240, 211, 1);
+}
+
+.navbar {
+	padding: 0px;
+}
+
 	.logo {
-		padding: 10px 50px;
+		width: 70%;
+		padding: 0;
 	}
 
 
@@ -48,16 +50,26 @@
 	  color: rgba(255, 165, 0, 1);
 	}
 
+	.fa-link, .fa-envelope, .fa-wrench {
+		font-size: 2.3em;
+  	margin-bottom: 10px;
+	}
+
 	.icon-img {
 	  width: 25%;
 	}
 
 	h1 {
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 
 	.angebot p {
 	  font-size: 1em;
+	}
+
+	.card-body {
+		padding: 15px;
+		margin-top: -20px;
 	}
 
 	.kontakt p {
@@ -68,18 +80,19 @@
 	  font-size: 1em;
 	}
 
-	.navbar-dark {/*
-		background-color: rgba(255, 255, 255, .95);*/
-	}
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
 
-	.modalDialog > div {
-	  width: 90vw;
-	  height: 90vh;
-	  position: relative;
-	  margin: 5% auto;
-	  padding: 15px;
-	  background-color: white;
-	}
+.modalDialog > div {
+  width: 95vw;
+  height: 95vh;
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: white;
+}
 
 	.close-x {
 		font-size: 1.7em;
@@ -87,6 +100,11 @@
 
 	.portfolio h1 {
 		margin-bottom: 10px;
+	}
+
+	.panel-button {
+		font-size: 1.1em;
+		margin: auto auto;
 	}
 
 }

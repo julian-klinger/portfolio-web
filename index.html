@@ -13,32 +13,37 @@
      <!-- Ensure load priority to last -->
     <link rel="stylesheet" href="assets/stylesheets/responsive.css">
     <link rel="stylesheet" href="assets/stylesheets/debug.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascripts/smoothscroll.js"></script>
     <title>Bärenweb - Webdesign, Webseiten</title>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#e8e4c1">
   </head>
   <body class="debug-">
 
-    <nav class="fixed-top navbar navbar-expand-xs navbar-dark .d-none"><!-- 
-      <a class="navbar-brand" href="#">
-        <img src="assets/images/logo_bear.png" height="40" alt="">
-      </a> -->
+    <nav class="fixed-top navbar navbar-expand-xs navbar-dark .d-none">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class=""><i class="fa fa-bars"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
-            <a class="nav-link smoothScroll" href="#start" data-toggle="collapse" data-target=".navbar-collapse.show">Bärenweb</span></a>
+            <a id="nav-start" class="nav-link" href="#start" data-toggle="collapse" data-target=".navbar-collapse.show">Bärenweb</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link smoothScroll" href="#angebot" data-toggle="collapse" data-target=".navbar-collapse.show">Angebot</span></a>
+            <a id="nav-angebot" class="nav-link" href="#angebot" data-toggle="collapse" data-target=".navbar-collapse.show">Angebot</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link smoothScroll" href="#portfolio" data-toggle="collapse" data-target=".navbar-collapse.show">Projekte</a>
+            <a id="nav-portfolio" class="nav-link" href="#portfolio" data-toggle="collapse" data-target=".navbar-collapse.show">Projekte</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link smoothScroll" href="#kontakt" data-toggle="collapse" data-target=".navbar-collapse.show">Kontakt</a>
+            <a id="nav-kontakt" class="nav-link" href="#kontakt" data-toggle="collapse" data-target=".navbar-collapse.show">Kontakt</a>
           </li>
         </ul>
       </div>
@@ -50,33 +55,35 @@
           <img class="logo mx-auto img-fluid" src="assets/images/logo.png">
         </div>
         <h1>Webdesign, Entwicklung und individuelle Beratung!</h1>
+
+
       </div>
     </section>
 
     <section id="angebot" class="angebot">
       <div class="container">
-       <div class="d-flex flex-column py-5 col-8 mx-auto">
+       <div class="d-flex flex-column py-5 col-12 col-sm-8 mx-auto">
           
-          <a href="#angebot" class="smoothScroll mx-auto arrow fa fa-angle-down"></a>
+          <a href="#angebot" class="mx-auto arrow fa fa-angle-down"></a>
 
           <div class="d-flex flex-column pr-4">
             <img class="mx-auto icon-img" src="assets/images/logo_bear.png">
           </div>
           <h1 class="text-center">Bäriges Webdesign</h1>
-          <p class="text-center">Webseiten im Zeichen des Bären; eines geduldigen, beschützenden, edlen aber gleichzeitig auch süßem Tier. Bärenweb erstellt für kleine und mittlere Unternehmen, Freiberufler oder auch Bands individuelle Webseiten. </p>
+          <p class="text-center">Bärenweb erstellt passgenau nach Ihren Wünschen eine Website. Sie haben nur eine vage Idee? Ich mache Ihnen gerne einen Vorschlag. Sie wissen schon ganz genau, was Sie wollen? Prima! </p>
           
           <i class="text-center icon mt-5 fa fa-heart"></i>
           <h1 class="text-center">Herzensprojekt</h1>
-          <p class="text-center">Ihre Wünsche stehen im Vordergrund. Dabei geht es mir nicht nur um Schriftgrößen und Farben, sondern auch um Reflektion. Warum benötigen Sie eine Webseite? Wer kommt von wo auf Ihre Webseite? Was möchten Sie Ihren Kunden unbedingt zeigen? </p>
+          <p class="text-center">Ihre Wünsche stehen im Vordergrund. Dabei geht es mir nicht nur um Schriftgrößen und Farben, sondern auch um Reflektion. Wer sind eigentlich Ihre Kunden und was möchten Sie Ihnen unbedingt zeigen? </p>
           
                  
           <i class="text-center icon mt-5 fas fa-euro-sign"></i>
           <h1 class="text-center">Bezahlbar</h1>
-          <p class="text-center">Zwar gibt es gute Arbeit nicht kostenlos, sie kann aber durchaus bezahlbar sein. Wichtig ist Transparenz. Wir müssen beide wissen, woran wir sind und ein gewisses Vertrauen aufbauen. Dann finden wir immer eine Lösung.</p>
+          <p class="text-center">Zwar gibt es gute Arbeit nicht kostenlos, sie kann aber durchaus bezahlbar sein. Wichtig ist Transparenz. Deshalb schicke ich Ihnen nach unserem Erstgespräch einen Kostenvoranschlag, über den wir gerne sprechen können.</p>
         </div>
       </div>
       <div class="d-flex align-items-center pb-3">
-        <a href="#portfolio" class="text-center smoothScroll mx-auto arrow1 fa fa-angle-down"></a>
+        <a href="#portfolio" class="text-center mx-auto arrow1 fa fa-angle-down"></a>
       </div>
     
     </section>
@@ -89,25 +96,21 @@
           <div class="col-12 col-lg-6 mx-auto">
             <div class="card">
 
-              <a href="#openModal1">
-                <span class="drawer drawer-text case"></span>
-              </a>
-
               <div id="openModal1" class="modalDialog">
                 <div>
-                  <a href="#close" title="Close" class="close-x fa fa-times"></a>
+                  <a data-scroll-ignore href="#close" title="Close" class="close-x fa fa-times"></a>
                   <h1>architekten-bergstraße.de</h1>
                   
                   <div class="m-1 m-md-3">
                     <div class="row">
 
                       <div class="col-12 col-md-6">
-                        <img class="img-fluid modal-img" src="assets/images/portfolio-architekten.jpg" alt="Card image cap">
+                        <img class="img-fluid modal-img" src="assets/images/portfolio-architekten.png" alt="Card image cap">
                       </div>
 
                       <div class="col-12 col-md-6">
                         <h2>Ausgangspunkt</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt accusam et</p>
+                        <p>Meine Eltern </p>
                         <h2>Idee</h2>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyaro eos et accusam et</p>
                         <h2>Umsetzung</h2>
@@ -117,21 +120,25 @@
                     </div>
                   </div>
 
-                  <a href="#close" title="Close">
-                    <div class="btn btn-block btn-info d-sm-none">Schließen</div>
+                  <a data-scroll-ignore href="#close" title="Close">
+                    <div class="btn btn-block btn-info d-sm-none close-btn">Schließen</div>
                   </a>
                       
                 </div>
               </div>
-
-              <a href="http://justabear.de" target="_blank">
-                <span class="drawer-visit visit-text visit"></span>
-              </a>
-              <img class="card-img-top" src="assets/images/portfolio-architekten.jpg" alt="Card image cap">
+                
+              <img class="card-img-top" src="assets/images/portfolio-architekten.png" alt="Card image cap">
               <div class="card-body">
                 <h2 class="card-title">architekten-bergstraße.de</h2>
-                <p class="card-text">Umsetzung eines Webauftritts eines Architekturbüros - von Konzeption über Design bis Entwicklung</p>
-                
+                <p class="card-text">Vollständige Umsetzung eines Webauftritts eines Architektur&shy;büros - Begleitung des Kunden von Konzeption über Design bis Release der Webseite</p>
+                <div class="row">
+                  <div class="col-12 col-sm-6 my-1">
+                    <a data-scroll-ignore href="#openModal1" class="btn btn-modal">Ein paar Sätze</a>
+                  </div>
+                  <div class="col-12 col-sm-6 my-1">
+                    <a href="http://www.barthold-klinger.de" target="_blank" class="btn btn-modal">Webseite besuchen</a>
+                  </div>                  
+                </div>
               </div>
             </div>
           </div>
@@ -139,45 +146,41 @@
           <div class="col-12 col-lg-6 mx-auto">
             <div class="card">
 
-              <a href="#openModal2">
-                <span class="drawer drawer-text case"></span>
-              </a>
-
               <div id="openModal2" class="modalDialog">
                 <div>
-                  <a href="#close" title="Close" class="close-x fa fa-times"></a>
+                  <a data-scroll-ignore href="#close" title="Close" class="close-x fa fa-times"></a>
                   <h1>als-bremen.de</h1>
                   
                   <div class="m-1 m-md-3">
                     <div class="row">
 
                       <div class="col-12 col-md-6">
-                        <img class="img-fluid modal-img" src="assets/images/portfolio-rustikal.jpg" alt="Card image cap">
+                        <img class="img-fluid modal-img" src="assets/images/portfolio-rustikal.png" alt="Card image cap">
                       </div>
 
                       <div class="col-12 col-md-6">
                         <h2>Ausgangspunkt</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt accusam et</p>
+                        <p>Durch persönliche Weiterempfehlung eines zufriedenen Kunden wurde ich von der ALS Hubarbeitsbühnen GmbH beauftragt, ihren Webauftritt zu überarbeiten, der von Kunden bislang positiv wahrgenommen wurde. Grundlegend wurde nach einem zuverlässigen Dienstleister gesucht, um auch künftig die Webseite zu aktualisieren und weiterzuentwickeln.</p>
                         <h2>Idee</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyaro eos et accusam et</p>
+                        <p>Zunächst erfolgte eine grafisch sanfte Überarbeitung auf Basis des Corporate Designs von ALS mit Fokus auf Stabilität und für mobile Geräte optimiert. Dabei wurden moderneren Design-Komponenten eingeführt und das Design insgesamt vereinheitlicht. Schauen Sie sich gerne den Vorher-Nachher-Vergleich links bzw. oben an (auf dem Smartphone)</p>
                         <h2>Umsetzung</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+                        <p>Da schon eine Überarbeitung der Seite von einem anderen Dienstleister begonnen war, aber leider viele Inhalte nicht zur Verfügung standen, lud ich mir die Inhalte der Seite aus einem Webarchiv herunter. Den Code schrieb ich nahezu vollständig neu.</p>
                       </div>
                   
                     </div>
                   </div>
 
-                  <a href="#close" title="Close">
-                    <div class="btn btn-block btn-info d-sm-none">Schließen</div>
+                  <a data-scroll-ignore href="#close" title="Close">
+                    <div class="btn btn-block btn-info d-sm-none close-btn">Schließen</div>
                   </a>
                       
                 </div>
               </div>
 
-              <a href="http://justabear.de" target="_blank">
-                <span class="drawer-visit visit-text visit"></span>
+              <a href="http://www.als-bremen.de" target="_blank">
+                
               </a>
-              <img class="card-img-top" src="assets/images/portfolio-rustikal.jpg" alt="Card image cap">
+              <img class="card-img-top" src="assets/images/portfolio-rustikal.png" alt="Card image cap">
 
               <!--          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -201,8 +204,15 @@
 
               <div class="card-body">
                 <h2 class="card-title">als-bremen.de</h2>
-                <p class="card-text">Überarbeitung der Webseite einer Hubarbeitsbühnen-Vermietung mit Fokus auf Stabilität und mobile Optimierung</p>
-                
+                <p class="card-text">Technische Überarbeitung der Webseite eines Unternehmens, das Arbeitsbühnen verleiht und repariert mit Fokus auf Stabilität und mobile Optimierung.</p>
+                <div class="row">
+                  <div class="col-12 col-sm-6 my-1">
+                    <a data-scroll-ignore href="#openModal2" class="btn btn-modal">Ein paar Sätze</a>
+                  </div>
+                  <div class="col-12 col-sm-6 my-1">
+                    <a href="http://www.als-bremen.de" target="_blank" class="btn btn-modal">Webseite besuchen</a>
+                  </div>                  
+                </div>                
               </div>
             </div>
           </div>
@@ -210,47 +220,51 @@
           <div class="col-12 col-lg-6 mx-auto">
             <div class="card">
 
-              <a href="#openModal3">
-                <span class="drawer drawer-text case"></span>
-              </a>
-
               <div id="openModal3" class="modalDialog">
                 <div>
-                  <a href="#close" title="Close" class="close-x fa fa-times"></a>
+                  <a data-scroll-ignore href="#close" title="Close" class="close-x fa fa-times"></a>
                   <h1>justabear.de</h1>
                   
                   <div class="m-1 m-md-3">
                     <div class="row">
 
                       <div class="col-12 col-md-6">
-                        <img class="img-fluid modal-img" src="assets/images/portfolio-band.jpg" alt="Card image cap">
+                        <img class="img-fluid modal-img" src="assets/images/portfolio-band.png" alt="Card image cap">
                       </div>
 
                       <div class="col-12 col-md-6">
                         <h2>Ausgangspunkt</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt accusam et</p>
+                        <p>Meine Band benötigte eine Webseite. Und ich hatte schon länger die Idee, programmieren zu lernen. Gesagt getan. Mithilfe eines guten Freundes mit langjähriger Erfahrung als Entwickler begann am lebenden Objekt Webentwicklung zu lernen.</p>
                         <h2>Idee</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyaro eos et accusam et</p>
+                        <p>Die Webseite sollte so simpel wie möglich gehalten sein, da erfahrungsgemäß Besucher von Bandwebseiten weder die Haustiere der Bandmitglieder interessieren noch ihre Schulbildung. Besucher einer Bandwebseite interessieren umso mehr die Musik in Bild und Ton, die Social Media Kanäle und Live-Termine.</p>
                         <h2>Umsetzung</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+                        <p>Schließlich folgt die Entwicklung der Webseite. Mit html, CSS und bootstrap erstellte ich in Absprache mit der Band einen One-Pager, der mit wenig Scrollen alle relevanten Inhalte und Informationen enthält. Schauen Sie doch mal rein.</p>
                       </div>
                   
                     </div>
                   </div>
 
-                  <a href="#close" title="Close">
-                    <div class="btn btn-block btn-info d-sm-none">Schließen</div>
+                  <a data-scroll-ignore href="#close" title="Close">
+                    <div class="btn btn-block btn-info d-sm-none close-btn">Schließen</div>
                   </a>
                       
                 </div>
               </div>
               <a href="http://justabear.de" target="_blank">
-                <span class="drawer-visit visit-text visit"></span>
+                
               </a>
-              <img class="card-img-top" src="assets/images/portfolio-band.jpg" alt="Card image cap">
+              <img class="card-img-top" src="assets/images/portfolio-band.png" alt="Card image cap">
               <div class="card-body">
                 <h2 class="card-title">justabear.de</h2>
-                <p class="card-text">Webseite meines Herzens-Bandprojekts - Grafische Bandwebseite, welche die Musik repräsentiert</p>
+                <p class="card-text">Webseite meines Herzens-Bandprojekts - Grafische Bandwebseite, welche die Musik auch optisch repräsentieren soll</p>
+                <div class="row">
+                  <div class="col-12 col-sm-6 my-1">
+                    <a data-scroll-ignore href="#openModal3" class="btn btn-modal">Ein paar Sätze</a>
+                  </div>
+                  <div class="col-12 col-sm-6 my-1">
+                    <a href="http://www.als-bremen.de" target="_blank" class="btn btn-modal">Webseite besuchen</a>
+                  </div>                  
+                </div> 
                 
               </div>
             </div>
@@ -259,20 +273,16 @@
           <div class="col-12 col-lg-6 mx-auto">
             <div class="card">
 
-              <a href="#openModal4">
-                <span class="drawer drawer-text case"></span>
-              </a>
-
               <div id="openModal4" class="modalDialog">
                 <div>
-                  <a href="#close" title="Close" class="close-x fa fa-times"></a>
+                  <a data-scroll-ignore href="#close" title="Close" class="close-x fa fa-times"></a>
                   <h1>haeapua.fi</h1>
                   
                   <div class="m-1 m-md-3">
                     <div class="row">
 
                       <div class="col-12 col-md-6">
-                        <img class="img-fluid modal-img" src="assets/images/portfolio-freelancer.jpg" alt="Card image cap">
+                        <img class="img-fluid modal-img" src="assets/images/portfolio-freelancer.png" alt="Card image cap">
                       </div>
 
                       <div class="col-12 col-md-6">
@@ -287,19 +297,27 @@
                     </div>
                   </div>
 
-                  <a href="#close" title="Close">
-                    <div class="btn btn-block btn-info d-sm-none">Schließen</div>
+                  <a data-scroll-ignore href="#close" title="Close">
+                    <div class="btn btn-block btn-info d-sm-none close-btn">Schließen</div>
                   </a>
                       
                 </div>
               </div>
-              <a href="http://justabear.de" target="_blank">
-                <span class="drawer-visit visit-text visit"></span>
+              <a href="http://www.haeapua.fi" target="_blank">
+                
               </a>
-              <img class="card-img-top" src="assets/images/portfolio-freelancer.jpg" alt="Card image cap">
+              <img class="card-img-top" src="assets/images/portfolio-freelancer.png" alt="Card image cap">
               <div class="card-body">
                 <h2 class="card-title">haeapua.fi</h2>
-                <p class="card-text">Front-End-Umsetzung als Teil eines Entwicklerteams in einem Ruby on Rails-Projekt</p>
+                <p class="card-text">Umsetzung des Front-Ends eines foll funktionsfähigen MVP einer finnischen Freelancer-Plattform als Teil eines Entwicklerteams in einem Ruby on Rails-Projekt</p>
+                <div class="row">
+                  <div class="col-12 col-sm-6 my-1">
+                    <a data-scroll-ignore href="#openModal4" class="btn btn-modal">Ein paar Sätze</a>
+                  </div>
+                  <div class="col-12 col-sm-6 my-1">
+                    <a href="http://www.als-bremen.de" target="_blank" class="btn btn-modal">Webseite besuchen</a>
+                  </div>                  
+                </div> 
                 
               </div>
             </div>
@@ -325,19 +343,19 @@
                   <h1 class="text-center">Interesse geweckt?</h1>
                 </div>
 
-                  <div class="p-1 p-sm-2 col-12 col-sm-4 ">
+                  <div class="p-1 p-sm-2 col-12 col-sm-4 col-lg-4 ">
                     <div class="panel-button kontakt-box btn btn-block" data-panelid="panel1">
                       ja?
                     </div>
                   </div>
 
-                  <div class="p-1 p-sm-2 col-12 col-sm-4">
+                  <div class="p-1 p-sm-2 col-12 col-sm-4 col-lg-4">
                     <div class="panel-button kontakt-box btn btn-block" data-panelid="panel2">
                       nein?
                     </div>
                   </div>
 
-                  <div class="p-1 p-sm-2 col-12 col-sm-4">
+                  <div class="p-1 p-sm-2 col-12 col-sm-4 col-lg-4">
                     <div class="panel-button kontakt-box btn btn-block" data-panelid="panel3">
                       vielleicht?
                     </div>
@@ -345,15 +363,47 @@
 
                 <div class="call-to-action m-1 mx-sm-2">
                   <div id="panel1" class="initially-hidden">
-                    <p class="p-1 p-sm-2 m-1">Super! Lassen Sie uns ein kostenloses Erstgespräch vereinbaren. Ich freue mich auf Ihre Nachricht unter kontakt@bärenweb.de oder 05553 155 155 7.</p>
+                    <p class="p-1 p-sm-2 m-1">Super! Lassen Sie uns ein kostenloses Erstgespräch vereinbaren. Ich freue mich auf Ihre Nachricht unter julian@bärenweb.de oder gerne auch auf einen Anruf an 05553 155 155 7. Falls ich nicht rangehen kann, sprechen sie mir gerne auf die Mailbox. Ich rufe umgehend zurück.</p>
                   </div>
 
                   <div id="panel2" class="initially-hidden">
-                    <p class="p-1 p-sm-2 m-1">Alles gut. Falls Sie doch 1 Minute Zeit haben, würde ich mich riesig über eine kurze Feedback-Mail an kontakt@bärenweb.de freuen.</p>
+                    <p class="p-1 p-sm-2 m-1">Alles gut. Falls Sie doch 1 Minute Zeit haben, würde ich mich riesig über ein kurzes Feedback freuen. Sie können mir aber auch gerne eine mail an julian@bärenweb.de schicken. Mir geht es schlicht darum, mich weiter zu verbessern.</p>
+                    <form class="p-2 pb-0 m-1" id="contact-form" method="post" action="contact.php" role="form">
+
+                      <div class="messages"></div>
+
+                      <div class="controls">
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label class="text-white" for="form_email">Email (wenn Sie mögen)</label>
+                                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Ihre Email-Adresse">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <label class="text-white" for="form_message">Ihr Feedback</label>
+                                      <textarea id="form_message" name="message" class="form-control" placeholder="Ihr Feeback für mich" *" rows="2" required="required" data-error="Bitte beschreiben Sie kurz Ihr Anliegen."></textarea>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <input type="submit" class="btn btn-success btn-send mb-3" value="Send message">
+                              </div>
+                          </div>
+                      </div>
+
+                  </form>
+
+
+
                   </div>
 
                   <div id="panel3" class="initially-hidden">
-                    <p class="p-1 p-sm-2 m-1">Geben Sie mir eine Chance, Sie zu überzeugen! Schreiben sie mir an kontakt@bärenweb.de oder rufen Sie mich direkt 01553 155 156 7 an! Ich rufe Sie auch gerne zurück.</p>
+                    <p class="p-1 p-sm-2 m-1">Geben Sie mir noch eine Chance, Sie zu überzeugen! Schreiben sie mir an julian@bärenweb.de oder rufen Sie mich direkt 01553 155 156 7 an! Ich rufe Sie auch gerne zurück.</p>
                   </div>
                 </div>
 
@@ -365,39 +415,47 @@
           </div>
         </div>
       </section>
-
+    </div>
       <footer>
         <div class="container">
-          <div class="row d-flex footer-box p-3">
-            <div class="col-12 col-md-4 order-md-1">
-              <h2>Links</h2>
-              <ul>
-                <li><a href="#start" class="smoothScroll">Nach oben</a></li>
-                <li><a href="#portfolio" class="smoothScroll">Zu den Projekten</a></li>
-                <li><a href="#angebot" class="smoothScroll">Zum Angebot</a></li>
-                <li><a href="impressum.html">Impressum</a></li>
-                <li><a href="datenschutz.html">Datenschutz</a></li>
-              </ul>  
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="card pb-0 mb-0 mt-2">
+                <div class="card-body pb-1">
+                  <i class="fa fa-link"></i>
+                  <h2 class="card-title">Links</h2>
+                  <p class="card-text">
+                    <a href="#start" class="smoothScroll">Nach oben |</a>
+                    <a href="#portfolio" class="smoothScroll">Zu den Projekten |</a>
+                    <a href="#angebot" class="smoothScroll">Zum Angebot |</a>
+                    <a href="impressum.html">Impressum |</a>
+                    <a href="datenschutz.html">Datenschutz</a></p>
+                  </div>
+              </div>
             </div>
-            <div class="col-12 col-md-4 order-md-2">
-              <h2>Meine Tools</h2>
-              <ul>
-                <li>html, CSS</li>
-                <li>Figma</li>
-                <li>javascript</li>
-                <li>Ruby on Rails</li>
-                <li>Github, Sublime Text</li> 
-              </ul>  
+            <div class="col-12 col-md-4">
+              <div class="card pb-0 mb-0 mt-2">
+                <div class="card-body pb-1">
+                  <i class="fa fa-wrench"></i>
+                  <h2 class="card-title">Meine Tools</h2>
+                  <p class="card-text">HTML, CSS, Figma, JavaScript, jQuery, Ruby on Rails, GitHub, Sublime Text</p>
+                  </div>
+              </div>
             </div>
-            <div class="col-12 col-md-4 order-md-3">
-              <!-- <img class="footer-logo" src="assets/images/logo_bear.png" onmouseover="document.getElementById('div1').style.display = 'block';" onmouseleave="document.getElementById('div1').style.display = 'none';"> -->
-
+            <div class="col-12 col-md-4">
+              <div class="card pb-0 mb-0 mt-2">
+                <div class="card-body pb-5  ">
+                  <i class="fa fa-envelope"></i>
+                  <h2 class="card-title">Kontakt</h2>
+                  <p class="card-text">Am besten erreichen Sie mich mit einer Mail an <a href="mailto:julian@bärenweb.de">julian@bärenweb.de</a></p>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
       </footer>
 <!--       <img id="div1" class="speechbubble" style="display: none;" src="assets/images/speechbubble.png">
- -->    </div>
+ -->    
 
 
     <div class="debug-size">
@@ -406,29 +464,23 @@
     <div class="d-none d-sm-none d-md-block d-lg-none d-xl-none">md</div>
     <div class="d-none d-sm-none d-md-none d-lg-block d-xl-none">lg</div>
     <div class="d-none d-sm-none d-md-none d-lg-none d-xl-block">xl</div>
-        
-    <script type="text/javascript">
-      $(function() {
-        $(document).click(function () {
-          $('.navbar-collapse').collapse('hide');
-        });
+
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        ignore: '[data-scroll-ignore]',
+        speed: 700, // Integer. How fast to complete the scroll in milliseconds
+        clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+        easing: 'easeInOutCubic',
       });
-
-      $(function() {
-        $('.panel-button').click(function () {
-          var panelID = $(this).attr('data-panelid');
-          $('#' + panelID).show(1000);
-          $('#' + panelID).siblings().hide();
-          $(this).addClass('btn-active');
-          $(this).parents().siblings().children().removeClass('btn-active');
-        });
-      })
-
 
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript" src="assets/javascripts/smoothscroll.js"></script>
+    <script type="text/javascript" src="assets/javascripts/panel.js"></script>
+    <script type="text/javascript" src="assets/javascripts/close_nav.js"></script>
   </body>
 </html>

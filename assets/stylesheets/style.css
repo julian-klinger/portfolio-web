@@ -1,9 +1,37 @@
 html, body {
-  overflow-x: hidden;
   font-family: 'Esteban', serif;
   hyphens: manual;
-  height: 100%;
 }
+
+
+/*generic */
+
+a {
+  color: rgba(255, 165, 0, 1);
+}
+a:hover {
+  color: rgba(255, 165, 0, .7);
+  text-decoration: none;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: rgba(255, 165, 0, 1);
+  text-align: center;
+  text-shadow: 0 0 1px white;
+}
+.impressum h2 {
+  color: rgba(255, 165, 0, 1);
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 1.4em;
+  color: rgba(255, 255, 255, 1);
+}
+
+
+/*navigation stuff*/
 
 .navbar-dark {
   font-family: 'Montserrat', sans-serif;
@@ -11,24 +39,41 @@ html, body {
   font-weight: 800;
   color: rgba(255, 165, 0, 1) !important;
 }
-
 .fa-bars {
-  font-size: 3em;
+  font-size: 3.4em;
   color: rgba(255, 165, 0, 1);
 }
-
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+/*unused without carousel*/
+.fa-angle-left, .fa-angle-right {
+  color: #f09f09;
+  font-size: 3em;
+}
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 165, 0, 1) !important;
   font-size: 1.4em;
 }
-
 .navbar-dark .navbar-nav .nav-link:hover {
   color: rgba(255, 165, 0, .7) !important;
 }
-
 .navbar-dark .navbar-nav .nav-link:visited {
   color: rgba(255, 165, 0, .7) !important;
 }
+.arrow {
+  font-size: 3em;
+  margin-top: -100px;
+  margin-bottom: 130px;
+  color: #f09f09;
+}
+.arrow1 {
+  font-size: 3em;
+  color: #f09f09;
+}
+
+
+/*splash / first section */
 
 .start {
   height: 100vh;
@@ -39,53 +84,13 @@ html, body {
   background-size: cover;
   padding-bottom: 75px;
 }
-
 .logo {
   padding: 10px 100px;
+  height: 100% !important;
 }
 
-.inhaber {
-  font-size: 1em;
-  line-height: .5em;
 
-}
-
-.arrow {
-  font-size: 3em;
-  margin-top: -100px;
-  margin-bottom: 130px;
-  color: #f09f09;
-}
-
-.arrow1 {
-  font-size: 3em;
-  color: #f09f09;
-}
-
-a:hover {
-  color: rgba(255, 165, 0, .7);
-  text-decoration: none;
-}
-
-h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  color: rgba(255, 165, 0, 1);
-  text-align: center;
-  text-shadow: 1px 1px 1px white;
-}
-
-.impressum h2 {
-  color: rgba(255, 165, 0, 1);
-
-}
-
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 1.4em;
-  color: rgba(255, 255, 255, 1);
-}
+/*angebot / second section*/
 
 .angebot p {
   font-family: 'Esteban', sans-serif;
@@ -93,30 +98,28 @@ h2 {
   font-size: 1.3em;
   color: rgba(255, 165, 0, 1);
 }
-
 .angebot {
   color: white;
   height: auto;
   background-color: #FFF0D3;
 }
-
 .icon-img {
   width: 13%;
 }
-
 .icon {
   font-size: 4em;
   color: rgba(255, 165, 0, 1);
 }
 
+
+/*portfolio / third section*/
+
 .portfolio h1 {
   margin-bottom: 45px;
 }
-
 .portfolio h2 {
   font-size: 1.2em;
 }
-
 .portfolio {
   color: #f09f09;
   -webkit-background-size: cover;
@@ -124,191 +127,49 @@ h2 {
   -o-background-size: cover;
   background-size: cover;
 }
-
 .card {
   border: none;
   border-radius: 0;
-  background-color: rgba(255, 255, 255, 1);
   color: rgba(255, 165, 0, 1);
   margin-bottom: 1.5em;
-  box-shadow: .5px .5px 4px rgba(180, 180, 180, 1);
   display: block;
 }
-
+.card:hover {
+}
 .card-title {
   margin-bottom: .2em;
 }
-
 .card h2 {
   color: rgba(255, 165, 0, 1);
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
-
-.card p {
+.card-body p {
   font-size: 1em;
-  line-height: 1.4em;
+  line-height: 1.3em;
 }
-
 .card-img-top {
   border: none;
   border-radius: 0;
 }
-
 .card-body {
-  padding: 15px;
+  padding: 50px;
+  padding-bottom: 30px;
+  margin-top: -60px;
+  border-radius: 5px;
 }
-
-.btn-primary {
-  background-color: rgba(255, 255, 255, 1);
-  border: none;
-  color: rgba(255, 165, 0, 1);
-}
-
-.kontakt {
-  color: #f09f09;
-  height: 100vh;
-}
-
-.kontakt p {
-  font-family: 'Esteban', sans-serif;
-  font-weight: 400;
-  font-size: 1.4em;
-  color: white;
-}
-
-
-.debug-size {
-  z-index: 2000;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-.debug-size div {
-  background: black;
-  padding: 20px;
-  color: white;
-}
-
-.fa-angle-left, .fa-angle-right {
-  color: #f09f09;
-  font-size: 3em;
-}
-
-.drawer {
-  position: absolute;
-  right: 0;
-  height: 50px;
+.btn-modal {
+  color: white !important;
   background-color: rgba(255, 165, 0, 1);
-  color: white;
-  width: 50px;
-  height: 35px;
-  overflow: hidden;
+  width: 100%;
+  border-radius: 3px;
 }
-
-.drawer:hover {
-  width: 200px;
-  transition: width .8s;
-}
-
-.drawer-visit {
-  position: absolute;
-  right: 0;
-  top: 40px;
-  height: 50px;
+.btn-modal:hover {
   background-color: rgba(255, 108, 0, 1);
-  color: white;
-  width: 50px;
-  height: 35px;
-  overflow: hidden;
 }
 
-.drawer-visit:hover {
-  width: 250px;
-  transition: width .8s;
-}
 
-.case:after{
-    content:'i';
-    font-size: 1.5em;
-}
-.case:hover:after{
-    content:'Mehr Infos';
-    font-size: 1.5em;
-    transition: content 1s;
-}
 
-.visit:after{
-    content:'w';
-    font-size: 1.5em;
-}
-.visit:hover:after{
-    content:'Website besuchen';
-    font-size: 1.5em;
-    transition: content 1s;
-}
-
-.drawer-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  text-align: center;
-}
-
-.visit-text {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  text-align: center;
-}
-
-footer {
-  background-color: rgba(255, 240, 211, .8);
-  padding: 20px;
-  color: rgba(67, 43, 0, 1);
-  text-align: center;
-  overflow: hidden;
-}
-
-.footer-logo {
-  width: 500px;
-  position: absolute;
-  bottom: -190px;
-  right: -80px;
-}
-
-footer a {
-  color: rgba(67, 43, 0, 1);
-}
-
-a {
-  color: rgba(255, 165, 0, 1);
-}
-
-footer h2 {
-  color: rgba(255, 165, 0, 1);
-}
-
-footer a:hover {
-  color: rgba(255, 165, 0, 1);
-}
-
-a:hover {
-  color: rgba(67, 43, 0, 1);
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.speechbubble {
-  position: absolute;
-  right: 40%;
-  bottom: 30%;
-  z-index: 1;
-  width: 250px;
-}
-
+/*portfolio -> modals*/
 
 .modalDialog {
   position: fixed;
@@ -322,21 +183,20 @@ ul {
   opacity:0;
   pointer-events: none;
 }
-
 .modalDialog:target {
   opacity:1;
   pointer-events: auto;
 }
-
 .modalDialog > div {
-  width: 70vw;
-  height: 70vh;
+  width: 95vw;
+  height: 95vh;
   position: relative;
-  margin: 10% auto;
   padding: 30px;
+  margin: auto;
+  margin-top: 10px;
   background-color: white;
+  overflow: auto;
 }
-
 .close-x {
   color: rgba(255, 165, 0, 1);
   line-height: 25px;
@@ -345,30 +205,36 @@ ul {
   text-align: center;
   top: 0px;
 }
-
 .fa-times{
   font-size: 2.5em;
   padding: 10px 15px 0 0 ;
 }
-
 .modal-img {
-  box-shadow: 1px 1px 3px rgba(170, 170, 170, 1);
   margin-bottom: 25px;
 }
-
 .btn-info {
   background-color: rgba(255, 165, 0, .8);
   color: white;
   border: none;
-  position: absolute !important;
-  bottom: 10px;
   width: 80vw;
 }
-
 .btn-info:hover {
   background-color: rgba(255, 165, 0, 1);
 }
 
+
+/*kontakt / fourth section*/
+
+.kontakt {
+  color: #f09f09;
+  height: 100vh;
+}
+.kontakt p {
+  font-family: 'Esteban', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: white;
+}
 .kontakt-img {
   background: url(../images/bear2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -376,7 +242,6 @@ ul {
   -o-background-size: cover;
   background-size: cover;
 }
-
 .kontakt-box {
   text-align: center;
   font-size: 1.3em;
@@ -386,26 +251,101 @@ ul {
   color: white;
   cursor: pointer;
 }
-
 .backdrop {
-  background-color: rgba(255, 240, 211, .8) ;
+  background-color: rgba(255, 240, 211, .6) ;
 }
-
 .initially-hidden {
   display: none;
 }
 
 .btn-active {
-  box-shadow: 0 0 7px black inset;
+  background-color: rgba(255, 108, 0, .9) !important;
 }
-
-.btn, .btn-block {
-  border-radius: 0 !important;
+.btn-success:hover {
+  background-color: rgba(255, 108, 0, .9);
+  color: white;
 }
-
-.call-to-action {
+.btn-success {
+  border: none;
+  background-color: #FFF0D3;
+  margin-top: 10px;
+  color: rgba(255, 165, 0, 1);
+}
+.btn-block {
+  border-radius: 0;
+  color: white !important;
+  background-color: rgba(255, 165, 0, 1);
   width: 100%;
+  border-radius: 3px;
+}
+.btn-block:hover {
+  background-color: rgba(255, 108, 0, .9);
+}
+.call-to-action {
   background-color: rgba(255, 165, 0, .9);
+  border-radius: 3px;
+}
+
+
+/*footer */
+
+footer {
+  background: rgba(255, 165, 0, 1);
+  padding: 5px;
+  color: rgba(255, 255, 255, 1) !important;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 3px 10px grey;
+}
+footer .card {
+  color: rgba(255, 165, 0, 1);
+  border-radius: 30px;
+  background-color: transparent;
+  margin-top: 20px;
+  padding: 10px;
+}
+.fa-link, .fa-envelope, .fa-wrench {
+  color: white;
+  font-size: 3em;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 1);;
+  text-shadow: 1px 1px 5px rgba(255, 165, 0, 1);
+}
+footer .card-title {
+  margin-bottom: .2em;
+}
+footer .card h2 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.2em;
+}
+footer .card-body a {
+  font-size: 1em;
+  line-height: 1.3em;
+  color: rgba(255, 255, 255, 1);
+}
+footer .card-body p {
+  font-size: 1em;
+  line-height: 1.3em;
+  color: rgba(255, 255, 255, 1);
+}
+footer .card-img-top {
+  border: none;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+footer .card-img-top:hover {
+  filter: grayscale(0%);
+}
+footer .card-body {
+  padding: 15px;
+  margin-top: 0px;
+  border-radius: 5px;
+}
+footer a {
+  color: rgba(255, 255, 255, 1);
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
 /*
@@ -415,3 +355,18 @@ ul {
 .rgba-primary-3 { color: rgba(197, 128, 0, 1); }
 .rgba-primary-4 { color: rgba(155, 100, 0, 1); } 
 */
+
+
+/*debug stuff */
+
+.debug-size {
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.debug-size div {
+  background: black;
+  padding: 20px;
+  color: white;
+}

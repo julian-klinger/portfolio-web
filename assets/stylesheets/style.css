@@ -33,6 +33,10 @@ h2 {
 
 /*navigation stuff*/
 
+.fixed-top {
+  right: auto !important;
+}
+
 .navbar-dark {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
@@ -78,8 +82,7 @@ h2 {
   background-size: cover;
 }
 .logo {
-  padding: 10px 100px;
-  height: 100% !important;
+  width: 50%;
 }
 
 

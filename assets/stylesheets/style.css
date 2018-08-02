@@ -46,10 +46,9 @@ h2 {
 .navbar-dark .navbar-toggler {
   border-color: transparent;
 }
-/*unused without carousel*/
 .fa-angle-left, .fa-angle-right {
   color: #f09f09;
-  font-size: 3em;
+  font-size: 4em;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 165, 0, 1) !important;
@@ -63,13 +62,8 @@ h2 {
 }
 .arrow {
   font-size: 3em;
-  margin-top: -100px;
-  margin-bottom: 130px;
   color: #f09f09;
-}
-.arrow1 {
-  font-size: 3em;
-  color: #f09f09;
+  padding-bottom: 10px;
 }
 
 
@@ -82,7 +76,6 @@ h2 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-bottom: 75px;
 }
 .logo {
   padding: 10px 100px;

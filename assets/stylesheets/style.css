@@ -18,7 +18,6 @@ h1 {
   font-weight: 800;
   color: rgba(255, 165, 0, 1);
   text-align: center;
-  text-shadow: 0 0 1px white;
 }
 .impressum h2 {
   color: rgba(255, 165, 0, 1);
@@ -35,6 +34,8 @@ h2 {
 
 .fixed-top {
   right: auto !important;
+  left: -1px;
+  top: -1px;
 }
 
 .navbar-dark {
@@ -44,7 +45,7 @@ h2 {
   color: rgba(255, 165, 0, 1) !important;
 }
 .fa-bars {
-  font-size: 3.4em;
+  font-size: 3em;
   color: rgba(255, 165, 0, 1);
 }
 .navbar-dark .navbar-toggler {
@@ -130,8 +131,6 @@ h2 {
   margin-bottom: 1.5em;
   display: block;
 }
-.card:hover {
-}
 .card-title {
   margin-bottom: .2em;
 }
@@ -160,7 +159,7 @@ h2 {
   border-radius: 3px;
 }
 .btn-modal:hover {
-  background-color: rgba(255, 108, 0, 1);
+  background-color: rgba(255, 108, 0, .8);
 }
 
 
@@ -228,7 +227,7 @@ h2 {
 .kontakt p {
   font-family: 'Esteban', sans-serif;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 1.15em;
   color: white;
 }
 .kontakt-img {
@@ -240,7 +239,7 @@ h2 {
 }
 .kontakt-box {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family: 'Montserrat';
   font-weight: 800;
   background-color: rgba(255, 165, 0, 1) ;
@@ -248,17 +247,17 @@ h2 {
   cursor: pointer;
 }
 .backdrop {
-  background-color: rgba(255, 240, 211, .6) ;
+  background-color: rgba(255, 240, 211, .9) ;
 }
 .initially-hidden {
   display: none;
 }
 
 .btn-active {
-  background-color: rgba(255, 108, 0, .9) !important;
+  background-color: rgba(255, 108, 0, .75) !important;
 }
 .btn-success:hover {
-  background-color: rgba(255, 108, 0, .9);
+  background-color: rgba(255, 108, 0, .75);
   color: white;
 }
 .btn-success {
@@ -275,10 +274,10 @@ h2 {
   border-radius: 3px;
 }
 .btn-block:hover {
-  background-color: rgba(255, 108, 0, .9);
+  background-color: rgba(255, 108, 0, .75);
 }
 .call-to-action {
-  background-color: rgba(255, 165, 0, .9);
+  background-color: rgba(255, 165, 0, .75);
   border-radius: 3px;
 }
 
@@ -286,43 +285,41 @@ h2 {
 /*footer */
 
 footer {
-  background: rgba(255, 165, 0, 1);
+  background: rgba(255, 240, 211, .9);
   padding: 5px;
   color: rgba(255, 255, 255, 1) !important;
   text-align: center;
   overflow: hidden;
-  box-shadow: 0 3px 10px grey;
+  box-shadow: 0 3px 15px grey;
 }
 footer .card {
   color: rgba(255, 165, 0, 1);
-  border-radius: 30px;
   background-color: transparent;
   margin-top: 20px;
   padding: 10px;
 }
-.fa-link, .fa-envelope, .fa-wrench {
-  color: white;
+footer .card:hover {
+  background: rgba(255, 240, 211, 1);
+  border-radius: 6px;
+}
+.fa-compass, .fa-envelope, .fa-coffee, .fa-glasses {
   font-size: 3em;
-  margin-bottom: 15px;
-  color: rgba(255, 255, 255, 1);;
-  text-shadow: 1px 1px 5px rgba(255, 165, 0, 1);
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(255, 165, 0, 1);
 }
 footer .card-title {
   margin-bottom: .2em;
 }
 footer .card h2 {
-  color: rgba(255, 255, 255, 1);
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 footer .card-body a {
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.3em;
-  color: rgba(255, 255, 255, 1);
 }
 footer .card-body p {
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.3em;
-  color: rgba(255, 255, 255, 1);
 }
 footer .card-img-top {
   border: none;
@@ -338,7 +335,6 @@ footer .card-body {
   border-radius: 5px;
 }
 footer a {
-  color: rgba(255, 255, 255, 1);
 }
 footer a:hover {
   text-decoration: underline;

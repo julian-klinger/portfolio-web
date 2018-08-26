@@ -83,7 +83,7 @@ h2 {
   background-size: cover;
 }
 .logo {
-  width: 50%;
+  width: 60%;
 }
 
 
@@ -159,7 +159,7 @@ h2 {
   border-radius: 3px;
 }
 .btn-modal:hover {
-  background-color: rgba(255, 108, 0, .8);
+  background-color: rgba(217, 92, 0, .8);
 }
 
 
@@ -246,25 +246,24 @@ h2 {
   color: white;
   cursor: pointer;
 }
-.backdrop {
-  background-color: rgba(255, 240, 211, .9) ;
+.interest-header {
+  text-shadow: 2px 2px 3px rgba(50, 50, 50, .7) !important;
 }
 .initially-hidden {
   display: none;
 }
-
 .btn-active {
-  background-color: rgba(255, 108, 0, .75) !important;
+  background-color: rgba(217, 92, 0, .85) !important;
 }
 .btn-success:hover {
-  background-color: rgba(255, 108, 0, .75);
+  background-color: rgba(255, 165, 0, .75);
   color: white;
 }
 .btn-success {
   border: none;
   background-color: #FFF0D3;
   margin-top: 10px;
-  color: rgba(255, 165, 0, 1);
+  color: rgba(217, 92, 0, 1);
 }
 .btn-block {
   border-radius: 0;
@@ -274,23 +273,28 @@ h2 {
   border-radius: 3px;
 }
 .btn-block:hover {
-  background-color: rgba(255, 108, 0, .75);
+  background-color: rgba(217, 92, 0, .75);
 }
 .call-to-action {
-  background-color: rgba(255, 165, 0, .75);
+  background-color: rgba(217, 92, 0, .85);
   border-radius: 3px;
 }
+.link-offset-helper {
+  color: inherit !important;
+}
+
 
 
 /*footer */
 
 footer {
-  background: rgba(255, 240, 211, .9);
+  background: rgba(50, 50, 50, .4);
   padding: 5px;
   color: rgba(255, 255, 255, 1) !important;
   text-align: center;
   overflow: hidden;
   box-shadow: 0 3px 15px grey;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1) !important;
 }
 footer .card {
   color: rgba(255, 165, 0, 1);
@@ -298,14 +302,9 @@ footer .card {
   margin-top: 20px;
   padding: 10px;
 }
-footer .card:hover {
-  background: rgba(255, 240, 211, 1);
-  border-radius: 6px;
-}
-.fa-compass, .fa-envelope, .fa-coffee, .fa-glasses {
+.fa-compass, .fa-envelope, .fa-coffee, .fa-info-circle {
   font-size: 3em;
   margin-bottom: 20px;
-  text-shadow: 1px 1px 3px rgba(255, 165, 0, 1);
 }
 footer .card-title {
   margin-bottom: .2em;
@@ -337,7 +336,8 @@ footer .card-body {
 footer a {
 }
 footer a:hover {
-  text-decoration: underline;
+  color: rgba(255, 255, 255, .9);
+  text-decoration: none;
 }
 
 /*

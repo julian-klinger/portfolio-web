@@ -4,10 +4,10 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'Feedback Bärenweb <feedback@bärenweb.de>';
+$from = 'Julian Klinger - Bärenweb <julian@bärenweb.de>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Julian <feedback@bärenweb.de>';
+$sendTo = 'Feedback <feedback@xn--brenweb-5wa.de>';
 
 // subject of the email
 $subject = 'Neues Feedback';

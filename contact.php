@@ -7,7 +7,7 @@
 $from = 'Feedback Bärenweb <feedback@bärenweb.de>';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Julian <jk_88@web.de>';
+$sendTo = 'Julian <feedback@bärenweb.de>';
 
 // subject of the email
 $subject = 'Neues Feedback';
@@ -34,7 +34,7 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "Ihr habt eine neue Nachricht \n=============================\n";
+    $emailText = "Neues Feedback auf Bärenweb.de \n=============================\n";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
